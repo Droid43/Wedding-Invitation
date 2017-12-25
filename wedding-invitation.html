@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>曾根-田彩云</title> 
+  <meta name="description" content="" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <!--<meta http-equiv="x-rim-auto-match" content="none">--> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" /> 
+  <link rel="stylesheet" type="text/css" href="./css/main.css" /> 
+  <link rel="stylesheet" type="text/css" href="./css/animations.css" /> 
+  <link rel="stylesheet" type="text/css" href="./css/css1.css" /> 
+  <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi" /> 
+  <script src="./js/jquery.min.js"></script> 
+  <script type="text/javascript">
+
+            function submit1() {
+//            var uid = document.getElementById("uid").value;
+//            var invitid = document.getElementById("invitid").value;
+                var uname = document.getElementById("uname").value;
+                var is_dinner = document.getElementById("is_dinner").value;
+//                var phone = document.getElementById("phone").value;
+                var context = document.getElementById("context").value;
+                var number = document.getElementById("number").value;
+                var Url = "http://wx2.cgsoft.net/tpl/simplebootx/bless/Invitation/index_post";
+                var tankuang=$("#tankuang");
+                if(uname.length<1){
+                tankuang.show().html("请输入姓名！");
+                    timer=setTimeout(function(){
+                        tankuang.hide().html("");
+                    },3000)
+                return;
+            }       
+               var obj = {
+                        uid:663953,
+                        invitid:252639,
+                        uname:uname,
+                        is_dinner:is_dinner,
+                        context:context,
+                        number:number
+            }
+            $.post("http://wx2.cgsoft.net/tpl/simplebootx/bless/Invitation/index_post", obj, function (json) {
+                if (json.status == 1) {
+
+                    tankuang.show().html("发送成功");
+                    timer=setTimeout(function(){
+                        tankuang.hide().html("");
+                    },3000)
+
+                } else {
+
+                    tankuang.show().html("发送失败");
+                    timer=setTimeout(function(){
+                        tankuang.hide().html("");
+                    },3000)
+                    return false;
+                }
+
+
+            });
+            }
+
+
+        </script> 
+ </head> 
+ <body class="s-bg-ddd pc no-3d" style="-webkit-user-select: none;"> 
+  <section class="p-ct transformNode-2d"> 
+   <div class="translate-back"> 
+    <!--翻页1--> 
+    <div class="m-page m-fengye" data-page-type="info_pic3" data-statics="info_pic3"> 
+     <div class="page-con lazy-finish" data-position="50% 50%" data-size="cover"> 
+      <div class="photo" style="background: url('./images/weiqingtie1_01.png') no-repeat center top; background-size:100% 100%;"></div> 
+      <div class="photo1 pt-page-rotateInNewspaper"> 
+       <img src="./images/5a3bc13d560bc.jpg" /> 
+      </div> 
+      <div class="title1 pt-page-moveFromBottom"> 
+       <h1> 曾根&nbsp;&nbsp;<img src="./images/weiqingtie1_01_03.png" />&nbsp;&nbsp;田彩云 </h1> 
+       <p>2017年12月20日 22时12分<br />农历:冬月初三(周三) </p> 
+       <p>钟祥市旧口镇肖湾村</p> 
+      </div> 
+     </div> 
+     <section class="u-arrow"> 
+      <p class="css_sprite01"></p> 
+     </section> 
+    </div> 
+    <!--翻页2--> 
+    <div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list"> 
+     <div class="page-con j-txtWrap lazy-finish" data-position="50% 50%" data-size="cover"> 
+      <div class="photo" style="background: url(./images/weiqingtie1_03.png) no-repeat center top; background-size:100% 100%;"></div> 
+      <div class="photo3 pt-page-rotateCarouselBottomIn_w"> 
+       <img src="./images/5a3bbed017b0c.jpg" /> 
+      </div> 
+      <div class="title3 pt-page-rotateCarouselTopIn"> 
+       <p>现在，我决定与她步入爱情的殿堂；<br /> 以后的路，我不再孤单，我们将一起欢笑！</p> 
+      </div> 
+     </div> 
+     <section class="u-arrow"> 
+      <p class="css_sprite01"></p> 
+     </section> 
+    </div> 
+    <!--翻页4--> 
+    <div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list"> 
+     <div class="page-con j-txtWrap lazy-finish" data-position="50% 50%" data-size="cover"> 
+      <div class="photo" style="background: url(./images/weiqingtie1_04.png) no-repeat center top; background-size:100% 100%;"></div> 
+      <div class="photo4_1 pt-page-rotateCarouselRightIn"> 
+       <img src="./images/5a3bb9f9da7b2.jpg" /> 
+      </div> 
+      <div class="photo4_2 pt-page-rotateCarouselLeftIn"> 
+       <img src="./images/5a3bb9f9eb951.jpg" /> 
+      </div> 
+      <div class="title4 pt-page-moveFromTop"> 
+       <p>于千万人之中，遇见你要遇见的人，<br /> 于千万年之中，时间无涯的荒野里，<br /> 没有早一步，也没有迟一步，遇上了你。</p> 
+      </div> 
+     </div> 
+     <section class="u-arrow"> 
+      <p class="css_sprite01"></p> 
+     </section> 
+    </div> 
+    <!--翻页5--> 
+    <div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list"> 
+     <div class="page-con j-txtWrap lazy-finish" data-position="50% 50%" data-size="cover"> 
+      <div class="photo" style="background: url(./images/weiqingtie1_05.png) no-repeat center top; background-size:100% 100%;"></div> 
+      <div class="photo5_1 pt-page-rotateCarouselBottomIn"> 
+       <img src="./images/5a3bc0e61086f.jpg" /> 
+      </div> 
+      <div class="photo5_2 pt-page-rotateCarouselTopIn"> 
+       <img src="./images/5a3bc0e63efa6.jpg" /> 
+      </div> 
+      <div class="title5 pt-page-moveFromTop"> 
+       <p>懂得，是绽放的花朵，轻盈的脚步，欢快的笑语，芬芳且温馨，合拍又优雅，亲切并迷人。</p> 
+      </div> 
+     </div> 
+     <section class="u-arrow"> 
+      <p class="css_sprite01"></p> 
+     </section> 
+    </div> 
+    <!--翻页6--> 
+    <div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list"> 
+     <div class="page-con j-txtWrap lazy-finish" data-position="50% 50%" data-size="cover"> 
+      <div class="photo" style="background: url(./images/weiqingtie1_06.png) no-repeat center top; background-size:100% 100%;"></div> 
+      <div class="photo6_1 pt-page-moveCircle"> 
+       <img src="./images/5a3bbc5071546.jpg" /> 
+      </div> 
+      <div class="photo6_2 pt-page-moveFromBottomFade"> 
+       <img src="./images/5a3bbc50670ab.jpg" /> 
+      </div> 
+      <div class="photo6_3 pt-page-moveFromBottomFade"> 
+       <img src="./images/5a3bbc507549e.jpg" /> 
+      </div> 
+      <div class="title6 pt-page-rotateCarouselTopIn_w"> 
+       <img src="./images/weiqingtie1_06_01.png" /> 
+      </div> 
+     </div> 
+     <section class="u-arrow"> 
+      <p class="css_sprite01"></p> 
+     </section> 
+    </div> 
+    <!--翻页7--> 
+    <div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list"> 
+     <div class="page-con j-txtWrap lazy-finish" data-position="50% 50%" data-size="cover"> 
+      <div class="photo" style="background: url(./images/weiqingtie1_07.png) no-repeat center top; background-size:100% 100%;"></div> 
+      <div class="photo7_1 pt-page-rotateCubeBottomIn"> 
+       <img src="./images/5a3bbca156a0c.jpg" /> 
+      </div> 
+      <div class="photo7_2 pt-page-rotateCubeBottomIn"> 
+       <img src="./images/5a3bbca153210.jpg" /> 
+      </div> 
+      <div class="photo7_3 pt-page-rotateCubeTopIn"> 
+       <img src="./images/5a3bbca16ece3.jpg" /> 
+      </div> 
+      <div class="title7 pt-page-rotateCarouselTopIn_w"> 
+       <img src="./images/weiqingtie1_07_01.png" /> 
+      </div> 
+     </div> 
+     <section class="u-arrow"> 
+      <p class="css_sprite01"></p> 
+     </section> 
+    </div> 
+    <!--翻页--> 
+    <!--赴宴信息8--> 
+    <div class="m-page m-bigTxt f-hide" data-page-type="bigTxt" data-statics="info_list"> 
+     <div class="page-con j-txtWrap lazy-finish" data-position="50% 50%" data-size="cover"> 
+      <div class="bg_pic" style="background: url(./images/weiqingtie1_08.png)no-repeat center top; background-size:100% 100%;"></div> 
+      <div class="text"> 
+       <div class="wrap"> 
+        <div class="center"> 
+         <div class="box3"> 
+          <form action="javascript:;" method="post"> 
+           <input type="hidden" id="uid" name="uid" value="663953" />
+           <input type="hidden" id="invitid" name="invitid" value="252639" />
+           <table border="0" cellspacing="0" cellpadding="0"> 
+            <input type="hidden" id="uid" name="uid" value="663953" /> 
+            <input type="hidden" id="invitid" name="invitid" value="252639" /> 
+            <tbody>
+             <tr> 
+              <td class="td1">您的姓名&nbsp;:</td> 
+              <td class="td1"><input type="text" id="uname" name="uname" value="" placeholder="姓名" /></td> 
+             </tr> 
+             <tr> 
+              <td class="td1">是否赴宴&nbsp;:</td> 
+              <td class="td1"> <select name="is_dinner" id="is_dinner" class="select1"> <option value="0">赴宴</option> <option value="1">待定</option> <option value="2">缺席</option> </select> </td> 
+             </tr> 
+             <tr class="yincang"> 
+              <td class="td1">赴宴人数&nbsp;:</td> 
+              <td class="td1"> <select name="number" id="number"> <option value="1" selected="selected">1人</option> <option value="2">2人</option> <option value="3">3人</option> <option value="4">4人</option> <option value="5">5人</option> <option value="6">6人</option> </select> </td> 
+             </tr> 
+             <tr> 
+              <td>您的祝福&nbsp;:</td> 
+             </tr> 
+             <tr> 
+              <td colspan="2"><textarea name="context" id="context" rows="4" cols="32">祝你们新婚快乐，永结同心！</textarea></td> 
+             </tr> 
+             <tr> 
+              <td colspan="2"> <a href="http://m.amap.com/?q=30.9622,112.647&amp;name=湖北省荆门市钟祥市旧口镇肖湾村"> <button type="button" class="button1"> 婚宴地址 <img src="./images/weiqingtie1_08_01.png" /> </button> </a> <button type="submit" onclick="submit1();">发送</button> <a href="http://jhxms.cn"> <button type="button" class="button2"> <img src="./images/weiqingtie1_08_02.png" /> 我也要制作 </button> </a> </td> 
+             </tr> 
+            </tbody>
+           </table> 
+          </form> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div id="tankuang"></div> 
+      <section class="u-arrow"> 
+       <p class="css_sprite01"></p> 
+      </section> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <!--music--> 
+  <div class="player-button"> 
+   <audio id="myAudio" tn-page-editable="aud0" autoplay="" loop="" tn-page-editable-type="aud-link" ng-src="郭富城 - 爱你爱不完.mp3" src="./audio/could-this-be-love.mp3" preload="auto" loop="loop"></audio> 
+  </div> 
+  <!--musicend--> 
+  <script type="text/javascript" src="./js/jquery.js"></script> 
+  <script src="./js/99_main.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="./js/zishiying.js" type="text/javascript" charset="utf-8"></script> 
+  <script type="text/javascript" src="./js/jweixin-1.0.0.js"></script> 
+  <script language="javascript">
+                                                            var onserver = 1;
+                                                            $(function () {
+                                                                var oAudio = document.getElementById('myAudio');
+                                                                oAudio.play();
+                                                                document.addEventListener("WeixinJSBridgeReady", function () {
+                                                                    oAudio.play();
+                                                                }, false);
+                                                                $('.player-button').click(function () {
+                                                                    if (oAudio.paused){       //paused 属性返回音频/视频是否已暂停。true 指示音频/视频已暂停。否则为 false。
+                                                                        oAudio.play();
+                                                                        $('.player-button').removeClass("player-button-stop");
+                                                                    } else {
+                                                                        oAudio.pause();
+                                                                        $('.player-button').addClass("player-button-stop");
+                                                                    }
+                                                                })
+                                                            })
+        </script> 
+  <script>
+            //监听加载状态改变
+            document.onreadystatechange = completeLoading;
+            //加载状态为complete时移除loading效果
+            function completeLoading() {
+                if (document.readyState == "complete") {
+                    $('#load').hide();
+                }
+            }
+        </script> 
+  <script>
+            function music() {
+                var oAudio = document.getElementById('myAudio');
+                oAudio.pause();
+                if (!$('.player-button').hasClass("player-button-stop")) {
+                    $('.player-button').addClass("player-button-stop");
+                }
+            }
+
+            function androidplay() {
+                var oAudio = document.getElementById('myAudio');
+                oAudio.play();
+            }
+        </script> 
+  <script>
+            $(".yincang").show();
+            $(".select1").change(function(){
+                var a=$(".select1").find("option:selected").text();             
+                if(a=="赴宴"){
+                    $(".yincang").show();
+                }else if(a=="待定"){
+                    $(".yincang").hide();
+                }else if(a=="缺席"){
+                    $(".yincang").hide();
+                }
+            })
+        </script>  
+ </body>
+</html>
